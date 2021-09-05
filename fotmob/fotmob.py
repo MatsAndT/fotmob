@@ -1,2 +1,0 @@
-class FotMob():
-    pass
