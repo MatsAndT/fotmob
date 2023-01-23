@@ -1,6 +1,10 @@
 
-from fotmob.cli import main
+from fotmob.api import FotMobApi
 
+api = FotMobApi()
 
-def test_main():
-    assert main([]) == 0
+def test_date_true():
+    assert api.checkDate("20210904") == True
+
+def test_date_false():
+    assert api.checkDate("09042021") == False
